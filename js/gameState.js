@@ -17,9 +17,9 @@ export const ghosty = {
 export const walls = [];
 export const wallWidth = 80;
 export const wallGap = 180;
-export const wallSpeed = 3;
+export const wallSpeed = 5;
 export let wallTimer = 0;
-export const wallInterval = 90;
+export const wallInterval = 45;
 
 export function setState(newState) {
     state = newState;

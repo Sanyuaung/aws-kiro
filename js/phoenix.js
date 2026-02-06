@@ -93,13 +93,12 @@ export function drawPhoenix(x, y, isTop) {
 }
 
 export function spawnWall() {
-    const minGapY = 100;
-    const maxGapY = canvas.height - wallGap - 100;
-    const gapY = Math.random() * (maxGapY - minGapY) + minGapY;
+    const lanes = [120, 200, 280, 360, 440]; // 5 different lanes
+    const lane = lanes[Math.floor(Math.random() * lanes.length)];
     
     walls.push({
         x: canvas.width,
-        gapY: gapY,
+        y: lane,
         scored: false
     });
 }

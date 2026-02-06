@@ -104,8 +104,7 @@ export function render() {
     
     // Phoenix birds
     walls.forEach(wall => {
-        drawPhoenix(wall.x, wall.gapY - 40, true);
-        drawPhoenix(wall.x, wall.gapY + wallGap + 40, false);
+        drawPhoenix(wall.x, wall.y, false);
     });
     
     // Ghosty

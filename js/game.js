@@ -51,15 +51,7 @@ export function update() {
         }
         
         if (ghosty.x + ghosty.radius > wall.x + 10 && ghosty.x - ghosty.radius < wall.x + 70) {
-            const topPhoenixY = wall.gapY - 40;
-            const bottomPhoenixY = wall.gapY + wallGap + 40;
-            
-            if (ghosty.y - ghosty.radius < topPhoenixY + 25 && ghosty.y + ghosty.radius > topPhoenixY - 25) {
-                gameOver();
-                return;
-            }
-            
-            if (ghosty.y - ghosty.radius < bottomPhoenixY + 25 && ghosty.y + ghosty.radius > bottomPhoenixY - 25) {
+            if (ghosty.y - ghosty.radius < wall.y + 25 && ghosty.y + ghosty.radius > wall.y - 25) {
                 gameOver();
                 return;
             }
